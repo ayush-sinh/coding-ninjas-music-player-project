@@ -2,17 +2,30 @@
   margin: 0px;
 }
 body {
-  background-color: #0c1027;
+  background-color: #121212;
   width: 100vw;
   height: auto;
 }
 /* ------------ Nav Bar -------- */
 nav {
-  background-color: rgba(12, 16, 40, 0.6);
+  background-color: black;
   width: 100%;
-  height: 75px;
+  height: 70px;
   position: fixed;
   top: 0px;
+}
+#left-align {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#logo img {
+  height: 180%;
 }
 
 /* ---------------------- Content ---------------------------------- */
