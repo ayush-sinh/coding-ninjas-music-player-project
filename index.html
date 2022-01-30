@@ -26,10 +26,97 @@
     </nav>
     <div id="content">
       <main id="main-section">
-        <section id="carousel"></section>
-        <section id="latest-release"></section>
-        <section id="popular-artists"></section>
-        <section id="music-stations"></section>
+        <section id="carousel">
+          <img
+            src="site-images/center_pic.jpg"
+            alt="main_image"
+            id="center-pic"
+          />
+        </section>
+        <section id="latest-release">
+          <h2 class="content-heading">Latest Releases</h2>
+          <div id="latest-songs">
+            <div class="song-thumb">
+              <img src="site-images/album-art-3.jpg" alt="" />
+              <div class="song-name">
+                <h4>I Need You</h4>
+                <h5>M83</h5>
+              </div>
+              <h5 id="timing">4:44</h5>
+            </div>
+            <div class="song-thumb">
+              <img src="site-images/album-art-4.jpg" alt="" />
+              <div class="song-name">
+                <h4>Moving On</h4>
+                <h5>Emmit Fenn</h5>
+              </div>
+              <h5 id="timing">4:44</h5>
+            </div>
+            <div class="song-thumb">
+              <img src="site-images/album-art-5.jpg" alt="" />
+              <div class="song-name">
+                <h4>Moving On</h4>
+                <h5>Emmit Fenn</h5>
+              </div>
+              <h5 id="timing">4:44</h5>
+            </div>
+
+            <div class="song-thumb">
+              <img src="site-images/album-art-6.jpg" alt="" />
+              <div class="song-name">
+                <h4>Ghost</h4>
+                <h5>Jeremy Zucker</h5>
+              </div>
+              <h5 id="timing">4:44</h5>
+            </div>
+          </div>
+        </section>
+        <section id="popular-artists">
+          <h2 class="content-heading">Popular Artists</h2>
+          <div class="pic-container">
+            <img
+              src="site-images/artist_1.jpg"
+              alt="artists"
+              class="display-pic"
+            />
+            <img
+              src="site-images/artist_2.jpg"
+              alt="artists"
+              class="display-pic"
+            />
+            <img
+              src="site-images/artist_3.jpg"
+              alt="artists"
+              class="display-pic"
+            />
+            <img
+              src="site-images/artist_4.jpg"
+              alt="artists"
+              class="display-pic"
+            />
+            <img
+              src="site-images/artist_5.jpg"
+              alt="artists"
+              class="display-pic"
+            />
+            <img
+              src="site-images/artist_6.jpg"
+              alt="artists"
+              class="display-pic"
+            />
+          </div>
+        </section>
+        <section id="music-stations">
+          <h2 class="content-heading">Stations</h2>
+          <div class="pic-container">
+            <img src="site-images/station_1.jpg" alt="" class="display-pic" />
+            <img src="site-images/station_2.jpg" alt="" class="display-pic" />
+            <img src="site-images/station_3.jpg" alt="" class="display-pic" />
+            <img src="site-images/station_4.jpg" alt="" class="display-pic" />
+            <img src="site-images/station_5.jpg" alt="" class="display-pic" />
+            <img src="site-images/station_6.jpg" alt="" class="display-pic" />
+          </div>
+        </section>
         <section id="genre"></section>
         <section id="latest-english"></section>
         <section id="latest-hindi"></section>
@@ -186,7 +273,30 @@
           <i class="fa fa-heart"></i>
         </div>
       </aside>
-      <div id="music-player"></div>
+      <div id="music-player" class="">
+        <div id="song-info">
+          <img src="site-images/album-art-1.jpg" alt="" />
+          <div class="song-name">
+            <h4>Mordern Flame</h4>
+            <h5>Emmit Fenn</h5>
+          </div>
+          <i class="fa fa-heart"></i>
+        </div>
+        <div id="music-control">
+          <i class="fas fa-random random-repeat"></i>
+          <i class="fas fa-step-backward forward-backward"></i>
+          <i class="fas fa-play-circle play-bttn"></i>
+          <i class="fas fa-step-forward forward-backward"></i>
+          <i class="fas fa-redo-alt random-repeat"></i>
+        </div>
+        <div id="volume-control">
+          <i class="fas fa-sliders-h"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-volume-down"></i>
+          <i class="fas fa-volume-up"></i>
+          <i class="fab fa-chromecast"></i>
+        </div>
+      </div>
     </div>
   </body>
 </html>
