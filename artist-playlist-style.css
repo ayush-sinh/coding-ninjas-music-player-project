@@ -10,6 +10,153 @@ body {
   font-family: "Outfit", sans-serif;
   color: white;
 }
+/* ----------------------setting up the CONTENT div ---------------------------------- */
+#content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px 0px;
+}
+/* ----------------------setting up the MAIN section ---------------------------------- */
+main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+/* ----------------------setting up the ArtistPoster ---------------------------------- */
+
+#artist-poster {
+  margin: 20px 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background-image: linear-gradient(to right, #0b1753, #0c1027);
+}
+#artist-poster img {
+  width: 45%;
+  height: auto;
+  border: none;
+  margin-right: 30px;
+}
+#description {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#description h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+#description h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: grey;
+}
+#description p {
+  color: grey;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#play-follow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#description h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: -7px;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  border: solid 1px;
+  background: linear-gradient(to left, #0b133a 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+#description h3:hover {
+  background-position: left;
+  color: black;
+}
+#play-follow h4 {
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.5s ease-out;
+}
+#play-follow h4:hover {
+  font-size: 20px;
+  color: white;
+}
+#description h5 {
+  font-weight: 300;
+  color: grey;
+}
+
+/* ----------------------setting up the ArtistPlaylist ---------------------------------- */
+#artist-queue {
+  width: 100%;
+  margin: 5px 0px;
+}
+.song-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 8px 0px;
+  background-image: linear-gradient(to right, #212746, #0c1027);
+}
+.song-row-left {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1vw;
+}
+.song-row-left h4 {
+  font-size: 15px;
+  font-weight: 300;
+  color: grey;
+}
+.song-row-left img {
+  height: 3.5vw;
+  margin: 0px 15px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px white;
+}
+.song-info h5 {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+.song-info h6 {
+  font-size: 13px;
+  font-weight: 400;
+  color: grey;
+}
+.song-row-right {
+  width: 7%;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* ---------------------------- designing the "NAV BAR" adding elements -------- */
 nav {
   background-color: rgba(12, 16, 39, 0.5);
@@ -73,116 +220,6 @@ nav {
   border-radius: 50%;
 }
 
-/* ----------------------setting up the CONTENT div ---------------------------------- */
-#content {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 100px 0px 50px 0px;
-}
-
-/* ---------------------------layout of the MAIN section -----------------------------*/
-main {
-  width: 55%;
-  height: 200vh;
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main section {
-  width: 100%;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-}
-main section > div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.content-heading {
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 25px;
-}
-.display-pic {
-  height: 8vw;
-  border: none;
-  border-radius: 50%;
-  transition: box-shadow 0.5s;
-}
-
-/* --------------------------- CAROUSEL ------------------------*/
-#carousel {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#carousel img {
-  width: 30%;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 1px 1px 8px grey;
-  transition: width 0.5s, box-shadow 0.5s;
-}
-#carousel img:hover {
-  box-shadow: 1px 1px 8px white;
-  width: 33%;
-}
-
-/* ------------------------  LATEST RELEASES ------------------- */
-#latest-songs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.song-thumb {
-  width: 45%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 20px 0px;
-  margin-right: 2%;
-}
-.song-thumb img {
-  margin: 0px 12px;
-  height: 12vh;
-  border: none;
-  border-radius: 2px;
-  box-shadow: 1px 1px 8px grey;
-  transition: box-shadow 0.5s;
-}
-.song-thumb img:hover {
-  box-shadow: 1px 1px 8px white;
-}
-.song-thumb h5 {
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: grey;
-}
-.song-thumb h4 {
-  font-size: 2rem;
-  font-weight: 200;
-}
-#timing {
-  margin-left: auto;
-}
-
-/* -------------------------- POPULAR ARTISTS ------------------- */
-.pic-container img:hover {
-  box-shadow: 1px 1px 8px white;
-}
-
 /* --------------------------- ASIDE SECTION ----------------------------- */
 aside {
   display: flex;
@@ -239,7 +276,6 @@ aside {
 #first-song * {
   color: #1ed760;
 }
-
 /* -------------------------------------- Styling MUSIC PLAYER --------------------- */
 #music-player {
   width: 100%;
@@ -266,7 +302,7 @@ aside {
 }
 #song-info img {
   height: 7vh;
-  margin: 0px 5px;
+  margin: 0px 5px 0px 0px;
   box-shadow: 1px 1px 8px grey;
 }
 #song-info i {
@@ -306,11 +342,108 @@ aside {
   margin: 0px 1vw;
   font-size: 20px;
 }
+.song-name h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.song-name h5 {
+  font-weight: 300;
+  color: grey;
+}
 
-@media screen and (max-width: 900px) {
+/* -------------------------------------- Responsive Styling  --------------------- */
+
+@media screen and (max-width: 1050px) {
   #content {
     margin-top: 70px;
   }
+  /* ---------------------------- setting up Responsive MainSection -------- */
+  main {
+    width: 90%;
+    margin: 0px;
+  }
+
+  /* --------------------------- responsive Artist Poster----------------------------- */
+  #artist-poster {
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    background-color: #0b1753;
+  }
+  #artist-poster img {
+    margin: 20px 0px;
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px grey;
+  }
+  #description {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: #0b1753;
+  }
+
+  /* --------------------------- responsive ArtistPlayList----------------------------- */
+  #artist-queue {
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .song-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 8px 0px;
+    background-image: linear-gradient(to right, #212746, #0c1027);
+  }
+  .song-row-left {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1vw;
+  }
+  .song-row-left h4 {
+    font-size: 15px;
+    font-weight: 300;
+    color: grey;
+    margin-left: 1vw;
+  }
+  .song-row-left img {
+    height: 8vh;
+    margin: 0px 15px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px white;
+  }
+  .song-info h5 {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+  }
+  .song-info h6 {
+    font-size: 13px;
+    font-weight: 400;
+    color: grey;
+  }
+  .song-row-right {
+    width: 15%;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   /* ---------------------------setting up the responsive NavBar -----------------------------*/
   nav {
     flex-direction: row;
@@ -346,42 +479,10 @@ aside {
   #right-align img {
     height: 50%;
   }
+
   /* ---------------------------setting up the responsive aside bar -----------------------------*/
   aside {
     display: none;
-  }
-  /* ---------------------------setting up the responsive MainSection -----------------------------*/
-  main {
-    width: 90%;
-    align-items: center;
-  }
-  #carousel {
-    display: none;
-  }
-  #latest-releases {
-    margin-top: 0px;
-    font-size: 0.5rem;
-  }
-  .song-thumb img {
-    height: 8vh;
-  }
-  .song-thumb h5 {
-    font-size: 0.5rem;
-    font-weight: 300;
-    color: grey;
-  }
-  .song-thumb h4 {
-    font-size: 0.8rem;
-    font-weight: 300;
-  }
-  #timing {
-    display: none;
-  }
-  .display-pic {
-    height: 13vw;
-    margin: 1.5vw;
-    border: none;
-    border-radius: 50%;
   }
   /* ----------------------- responsive styling for the bottom music player ---- */
   #music-player {

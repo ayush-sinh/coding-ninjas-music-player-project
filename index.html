@@ -13,6 +13,7 @@
     <title>muse - Listen to your favorite artist!</title>
   </head>
   <body>
+    <!--------------------Tags for NavBar----------------------->
     <nav id="navigation">
       <div id="left-align">
         <h1>muse</h1>
@@ -24,15 +25,17 @@
         <img src="site-images/profile -pic.jpg" alt="profile-pic" />
       </div>
     </nav>
+    <!--------------------Tags for Body----------------------->
     <div id="content">
+      <!--------------------Tags for Main Body----------------------->
       <main id="main-section">
+        <!--------------------Tags for Carousel----------------------->
         <section id="carousel">
-          <img
-            src="site-images/center_pic.jpg"
-            alt="main_image"
-            id="center-pic"
-          />
+          <img src="/site-images/carousel-img-1.jpeg" alt="" />
+          <img src="/site-images/carousel-img-2.jpg" alt="" />
+          <img src="/site-images/carousel-img-3.jpg" alt="" />
         </section>
+        <!--------------------Tags for Latest-Releases----------------------->
         <section id="latest-release">
           <h2 class="content-heading">Latest Releases</h2>
           <div id="latest-songs">
@@ -71,19 +74,22 @@
             </div>
           </div>
         </section>
+        <!--------------------Tags for Featured-Artists----------------------->
         <section id="popular-artists">
           <h2 class="content-heading">Popular Artists</h2>
           <div class="pic-container">
-            <img
-              src="site-images/artist_1.jpg"
-              alt="artists"
-              class="display-pic"
-            />
-            <img
-              src="site-images/artist_2.jpg"
-              alt="artists"
-              class="display-pic"
-            />
+            <a href="/artist-playlist.html"
+              ><img
+                src="site-images/artist_1.jpg"
+                alt="artists"
+                class="display-pic"
+            /></a>
+            <a href="/artist-playlist.html"
+              ><img
+                src="site-images/artist_2.jpg"
+                alt="artists"
+                class="display-pic"
+            /></a>
             <img
               src="site-images/artist_3.jpg"
               alt="artists"
@@ -106,6 +112,8 @@
             />
           </div>
         </section>
+
+        <!--------------------Tags for Music-stations----------------------->
         <section id="music-stations">
           <h2 class="content-heading">Stations</h2>
           <div class="pic-container">
@@ -122,7 +130,7 @@
         <section id="latest-hindi"></section>
       </main>
 
-      <! ----------------------------- Aside section with songs --------------------------->
+      <!----------------------------- Aside section with songs --------------------------->
 
       <aside id="aside-section">
         <h1 id="queue-heading">Queue</h1>
@@ -133,6 +141,7 @@
             <h4>Mordern Flame</h4>
             <h5>Emmit Fenn</h5>
           </div>
+          <i class="fas fa-pause"></i>
           <i class="fa fa-heart"></i>
         </div>
         <div class="song-queue">
@@ -273,6 +282,7 @@
           <i class="fa fa-heart"></i>
         </div>
       </aside>
+      <!------------------------- Tags for MusicPlayer ---------------------------->
       <div id="music-player" class="">
         <div id="song-info">
           <img src="site-images/album-art-1.jpg" alt="" />
